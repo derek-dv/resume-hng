@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__brand > img {
+  width: 50px;
+}
+
+.nav__links {
+  margin-right: 1rem;
+}
+
+.nav__links > a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  color: #333;
+  background-color: #db4242;
+  padding: 0.5rem 1rem;
+  font-size: small;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in;
+}
+
+.nav__links > a:hover {
+  background-color: #f50a0a;
+}
+
+h2 {
+  margin-top: 1rem;
+  color: #db4242;
+}
+
+.main {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.main:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+  }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.main > img {
+  width: 200px;
+  margin-top: 3em;
+  border: 3px solid #db4242;
+  border-radius: 0.5rem;
+}
+
+.main__text {
+  max-width: 30ch;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.main__btn {
+  text-decoration: none;
+  background-color: #db4242;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  transition: all 200ms ease-in;
+}
+
+.main__btn:hover {
+  background-color: #f50a0a;
+}
+
+.sections {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about > p,
+.exp__text {
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp__head {
+  margin-top: 1rem;
+}
+.exp__head > p {
+  font-size: small;
+  color: gray;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group > label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact form {
+  margin-top: 1rem;
+}
+.form__group > input,
+.form__group > textarea {
+  margin-bottom: 1rem;
+}
+
+.form__btn {
+  background-color: #db4242;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in;
+  border: 1px solid #333;
+}
+
+.form__btn:hover {
+  background-color: #f50a0a;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+}
+
+.flashes > p {
+  padding: 0.5rem 1rem;
+  background-color: rgb(17, 192, 17);
+  border-radius: 0.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
