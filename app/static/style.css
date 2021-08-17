@@ -171,3 +171,11 @@ footer {
   color: #333;
   margin-top: 1rem;
 }
+
+.skills > ul {
+  margin-top: 1rem;
+}
+
+.skills li {
+  margin-top: 0.5rem;
+}
