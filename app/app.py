@@ -36,7 +36,7 @@ def home():
         mail.send(msg)
         db.session.add(message)
         db.session.commit()
-        flash(f'Message sent to {email}')
+        flash(f'Message from {email} recieved!')
         print(request.form['email'])
         return redirect('/')
 
