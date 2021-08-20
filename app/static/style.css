@@ -145,7 +145,8 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.form__group > input {
+.form__group > input,
+.form__group > textarea {
   padding: 0.5rem 1rem;
 }
 
