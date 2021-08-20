@@ -145,6 +145,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.form__group > input {
+  padding: 0.5rem 1rem;
+}
+
 .form__btn {
   background-color: #db4242;
   padding: 0.5rem 1rem;
@@ -159,6 +163,7 @@ h2 {
 }
 
 footer {
+  margin-top: 2rem;
   padding: 1rem;
   text-align: center;
   background-color: #333;
