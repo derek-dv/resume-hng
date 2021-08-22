@@ -40,5 +40,23 @@ def home():
         print(request.form['email'])
         return redirect('/')
 
+
+@app.route('/old', methods=['POST', 'GET'])
+def old():
+    if request.method == 'GET':
+        return render_template('index.html')
+    else:
+        email = request.form['email']
+        name = request.form["name"]
+        content = request.form["content"]
+        message = Contact(name=name, email=email, content=content)
+        msg = Message(subject='Hello From Derek', recipients=[email], body=content, sender='derekmiracledavid@gmail.com', attachments=None)
+        mail.send(msg)
+        db.session.add(message)
+        db.session.commit()
+        flash(f'Message from {email} recieved!')
+        print(request.form['email'])
+        return redirect('/old')
+
 if __name__ == "__main__":
     app.run(debug=True)
