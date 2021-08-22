@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Derek David</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__brand">
+        <img src="static/index.jpeg" />
+      </div>
+      <div class="nav__links">
+        <a href="#home">HOME</a><a href="#about">ABOUT</a
+        ><a href="#experience">EXPERIENCE</a><a href="#skills">SKILLS</a
+        ><a href="#send-message">CONTACT FORM</a>
+      </div>
+    </nav>
+    <hr />
+    <main>
+      <div class="main" id="home">
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        <ul class="flashes">
+          {% for message in messages %}
+          <p>{{ message }}</p>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %}
+        <img src="static/me.jpg" alt="ME" />
+        <div class="main__text">
+          Hello! I am Derek David. I am an aspiring Software Engineer but
+          currently a Computer Science student. Welcome to my page!
+        </div>
+        <a href="#about" class="main__btn">About me</a>
+      </div>
+      <div class="sections">
+        <div class="about" id="about">
+          <h2>About Me</h2>
+          <hr />
+          <p>
+            I am Derek David, a Computer Science Student in Gombe State
+            University. I am passionate about deep learning and artificial
+            intelligence. I do hope to work in the field in the near future but
+            at present, I learning to be a Backend Developer.
+          </p>
+        </div>
+        <ul class="experience" id="experience">
+          <h2>My Experience</h2>
+          <hr />
+          <li class="exp">
+            <div class="exp__head">
+              <h3>
+                Computer Lab Attendant at Adamawa State Polytechnics (Compulsory
+                SIWES)
+              </h3>
+              <p>20th March 2021 - 20th August 2021</p>
+            </div>
+            <div class="exp__text">
+              I assisted the Polytechnic's computer lecturers in organising and
+              conducting computer practicals. I also had an insight on a
+              lecturer's daily routine. I used the Polytechnic's resources to
+              get a some Deep learning certificates from Coursera.
+            </div>
+          </li>
+
+          <li class="exp">
+            <div class="exp__head">
+              <h3>Software Engineer Freelancer at Upwork</h3>
+              <p>20th March 2021 - present</p>
+            </div>
+            <div class="exp__text">
+              I joined Upwork, a freelancing platform and from there, I provide
+              services such as web development and machine learning to clients.
+            </div>
+          </li>
+          <li class="exp">
+            <div class="exp__head">
+              <h3>Backend Intern at Zuri</h3>
+
+              <p>12th August 2021 - Present</p>
+            </div>
+            <div class="exp__text">
+              I started my Zuri internship right before the end of my SIWES
+              program. So far it has been exciting (This is actually a task I'll
+              have to submit!).
+            </div>
+          </li>
+        </ul>
+        <div class="skills" id="skills">
+          <h2>My Skill</h2>
+          <hr />
+          <div class="skill">
+            <div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div>
+            <div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div><div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div><div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div><div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div><div class="skill__item">
+              <img src="static/zuri.jpeg" />
+              <h3>Javascript</h3>
+              <p>
+                Javascript is the language I use almost daily for tasks that
+                range from Desktop, Mobile, Web and Backend development
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <hr />
+          <form method="POST">
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                name="email"
+              />
+            </div>
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                name="name"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="content">Message</label>
+              <textarea
+                id="content"
+                name="content"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <input type="submit" class="form__btn" value="Sumbit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      &copy;2021 Derek David<br />
+      <a href="http://github.com/derek-dv">Github</a>
+      <a href="https://zuri.team"><img src="/static/zuri.jpeg" /></a>
+    </footer>
+  </body>
+</html>
